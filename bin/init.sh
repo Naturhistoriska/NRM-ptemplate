@@ -24,6 +24,10 @@ Text here.
 
 More documentation in the \`doc\` folder.
 
+## Notebook
+
+Project [Notebook](../Notebook.md)
+
 ## Tools
 
 $(find bin -type f -executable ! -iname "init.sh" -printf "* %p\n")
