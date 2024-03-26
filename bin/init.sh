@@ -3,11 +3,11 @@
 TIMESTAMP=$(date '+%Y-%m-%d')
 
 ## Set wd
-SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
-PROJPATH=$(dirname $SCRIPTPATH)
-PROJNAME=$(basename $PROJPATH)
+SCRIPTPATH="$( cd "$(dirname "$0")" || exit ; pwd -P )"
+PROJPATH=$(dirname "$SCRIPTPATH")
+PROJNAME=$(basename "$PROJPATH")
 
-echo "* Project name:" $PROJNAME
+echo "* Project name:" "$PROJNAME"
 
 ## Create doc/README.md
 if true ; then
@@ -52,13 +52,14 @@ fi
 
 ## Reinit git, create .gitignore, and append to doc/README.md
 if command -v git >/dev/null 2>&1; then
-  cd $PROJPATH
+  cd "$PROJPATH" || exit
   if [ -e ".git" ] ; then
       rm -rf .git
   fi
   echo -n "* "
   git init
   cat << EOF > .gitignore
+private/*
 old/
 tmp/
 raw-data/*
@@ -77,9 +78,9 @@ fi
 
 ## Create other README.md files
 if true ; then
-  for f in bin data raw-data analyses results src ; do
-  cat << EOF > "$f"/README.md
-# $PROJNAME -- $f
+  for d in bin data raw-data analyses metadata results src ; do
+  cat << EOF > "$d"/README.md
+# $PROJNAME -- $d
 
 **Version:** $TIMESTAMP
 
@@ -91,6 +92,30 @@ Text here.
 
 EOF
   done
+fi
+
+## Create Notebook.md file
+if true ; then
+  cat << EOF > Notebook.md
+# $PROJNAME -- Notebook
+
+**Version:** $TIMESTAMP
+
+**Sign:** $USER
+
+## Description
+
+Text here.
+
+## TODO
+
+- [ ] Secure metadata from user
+- [ ] Data backup
+- [ ] Clone repo on compute resource
+- [ ]
+
+EOF
+
 fi
 
 ## List files and folders
@@ -105,5 +130,5 @@ fi
 echo "* Start with file doc/README.md"
 
 ## Move init.sh to old/
-mv "$0" $PROJPATH/old/
+mv "$0" "$PROJPATH"/old/
 
