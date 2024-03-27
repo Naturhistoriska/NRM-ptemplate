@@ -82,7 +82,7 @@ fi
 
 ## Create other README.md files
 if true ; then
-  for d in bin data raw-data analyses metadata results src ; do
+  for d in bin data raw-data analyses metadata private results src wet-lab wet-lab/img ; do
   cat << EOF > "$d"/README.md
 # $PROJNAME -- $d
 
@@ -116,7 +116,7 @@ Text here.
 - [ ] Secure metadata from user
 - [ ] Data backup
 - [ ] Clone repo on compute resource
-- [ ]
+- [ ] ...
 
 EOF
 

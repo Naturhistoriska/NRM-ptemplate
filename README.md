@@ -1,6 +1,6 @@
 # NRM-ptemplate - A project template for sequencing projects at NRM
 
-- Last modified: tis mar 26, 2024  04:03
+- Last modified: ons mar 27, 2024  10:27
 - Sign: JN
 
 Inspired by [A Quick Guide to Organizing Computational Biology
@@ -14,7 +14,7 @@ To initialize a new `project`, run these three steps:
 
 This will create the following file structure:
 
-    project/
+    project
     ├── analyses
     │   └── README.md
     ├── bin
@@ -26,11 +26,10 @@ This will create the following file structure:
     ├── doc
     │   └── README.md
     ├── metadata
+    │   ├── ENA_sample_checklist.xlsx
+    │   ├── ENA-study-checklist.md
     │   └── README.md
-    ├──.editorconfig
-    ├──.gitignore
-    ├──.git/
-    ├── old/
+    ├── old
     ├── private
     │   └── README.md
     ├── raw-data
@@ -42,7 +41,11 @@ This will create the following file structure:
     │   ├── fasta_parser.pl
     │   ├── fasta_parser.py
     │   └── README.md
-    └── tmp/
+    ├── tmp
+    └── wet-lab
+        ├── img
+        │   └── README.md
+        └── README.md
 
 Files are set under version control (git), except folders `private/`,
 `raw-data/`, `old/` and `tmp/`. This can be changed by editing the `.gitignore`
