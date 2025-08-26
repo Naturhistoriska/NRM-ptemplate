@@ -38,8 +38,11 @@ Project [Checklist](CHECKLIST.md)
 
 ## Tools
 
-$(find -L bin -type f -executable ! -iname "init.sh" -printf "* %p\n")
+$(find -L bin -type f -executable ! -iname "init.sh" -printf "* \`%p\`\n")
 
+To add project bin folder to PATH:
+
+   export PATH="${PROJPATH}"/bin:\$PATH"
 
 ## Metadata
 
@@ -56,10 +59,6 @@ Analyses in \`analyses\` folder.
 ## Wet-lab
 
 Wet-lab documents in \`wet-lab\` folder.
-
-Text here.
-
----
 
 ## Results
 
@@ -87,16 +86,12 @@ raw-data/*
 !raw-data/README.md
 EOF
   cat << EOF >> doc/README.md
-Version Control
+## Version Control
 
 To track changes (after creating and editing files)
 
     git add --all
     git commit -m "first commit"
-
-To add project bin folder to PATH:
-
-   export PATH="${PROJPATH}"/bin:\$PATH"
 
 EOF
 fi
