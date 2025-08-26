@@ -1,5 +1,10 @@
 # NRM-ptemplate - A project template for sequencing projects at NRM
 
+tl;dr
+
+    $ git clone https://github.com/Naturhistoriska/NRM-ptemplate.git proj
+    $ cd proj && sh bin/init.sh
+
 ## Description
 
 This repository provides a file hierachy for sequencing projects at NRM.
