@@ -1,4 +1,4 @@
-# ptemplate -- bin
+# NRM-ptemplate -- bin
 
 **Version:** 2016-01-25
 

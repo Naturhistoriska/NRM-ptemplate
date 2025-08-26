@@ -1,4 +1,4 @@
-# ptemplate -- raw data
+# NRM-ptemplate -- raw data
 
 **Version:** 2016-01-25
 

@@ -1,4 +1,4 @@
-# ptemplate -- analyses
+# NRM-ptemplate -- analyses
 
 **Version:** 2016-01-25
 

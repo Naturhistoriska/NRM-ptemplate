@@ -1,4 +1,4 @@
-# ptemplate -- wet-lab
+# NRM-ptemplate -- wet-lab
 
 **Version:** 2016-01-25
 

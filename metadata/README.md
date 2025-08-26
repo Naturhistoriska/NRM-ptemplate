@@ -1,4 +1,4 @@
-# ptemplate -- metadata
+# NRM-ptemplate -- metadata
 
 **Version:** 2016-01-25
 
