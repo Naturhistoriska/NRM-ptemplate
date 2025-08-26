@@ -41,12 +41,28 @@ is recommended to use an informative name for the project, such as, e.g.,
     $ cd john-doe-fishes
     $ sh bin/init.sh
 
-This will create the following file structure:
+This will create the following folder structure:
 
     john-doe-fishes
+    ├── analyses
+    ├── bin
+    ├── data
+    ├── doc
+    ├── metadata
+    ├── old
+    ├── private
+    ├── raw-data
+    ├── results
+    ├── src
+    ├── tmp
+    ├── wet-lab
+    ├── .git
+    ├── Notebook.md
+    ├── README.md
+    ├── .editorconfig
+    └── .gitignore
 
-
-Files are set under version control (git), except folders `private/`,
+Files are set under version control (git), except in folders `private/`,
 `raw-data/`, `old/` and `tmp/`. This can be changed by editing the `.gitignore`
 file (see <https://git-scm.com/docs/gitignore>).
 
