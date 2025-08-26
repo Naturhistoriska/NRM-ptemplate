@@ -1,4 +1,4 @@
-# Project ptemplate
+# NRM-ptemplate
 
 **Version:** 2016-01-25
 
@@ -10,17 +10,37 @@ Text here.
 
 More documentation in the `doc` folder.
 
+## Notebook
+
+Project [Notebook](../Notebook.md)
+
+## Checklist
+
+Project [Checklist](CHECKLIST.md)
+
 ## Tools
 
-* bin/fasta_unwrap.pl
-* bin/fasta_wrap.pl
-* bin/get_fasta_info.pl
+* bin/ask\_ena\_for\_taxon.py
+* bin/ask\_ena\_for\_taxid.py
+* bin/check\_ena\_table\_for\_taxid.py
+* bin/check\_ena\_table\_date\_format.py
+* bin/fill\_ngi\_submit\_sheet.py
+
+## Metadata
+
+Metadata in the \`metadata\` folder.
 
 ## Data
 
-Data in the `data` folder.
+Data in the `data` folder, raw data in the `raw-data` folder.
 
 ## Analyses
+
+Analyses in \`analyses\` folder.
+
+## Wet-lab
+
+Wet-lab documents in \`wet-lab\` folder.
 
 Text here.
 
@@ -28,14 +48,7 @@ Text here.
 
 ## Results
 
-Results in `results` folder.
+Results in \`results\` folder.
 
 ---
-
-Version Control
-
-To track changes (after creating and editing files)
-
-    git add *
-    git commit -m "first commit"
 
