@@ -24,19 +24,21 @@ if true ; then
 
 ## Description
 
-Text here.
+Add text here.
 
-More documentation in the \`doc\` folder.
+## Documentation
+
+Documentation in the \`doc\` folder.
 
 ## Notebook
 
-Project [Notebook.md](../Notebook.md)
+Project [\`Notebook.md\`](../Notebook.md)
 
 ## Checklist
 
-Project [Checklist.md](Checklist.md)
+Project [\`Checklist.md\`](Checklist.md)
 
-## Tools
+## Binaries and scripts
 
 $(find -L bin -type f -executable ! -iname "init.sh" -printf "* \`%p\`\n")
 
@@ -46,23 +48,23 @@ To add project bin folder to PATH:
 
 ## Metadata
 
-Metadata in the \`metadata\` folder.
+Metadata in the [\`metadata\`](../metadata) folder.
 
 ## Data
 
-Data in the \`data\` folder, raw data in the \`raw-data\` folder.
+Data in the [\`data\`](../data) folder, raw data in the [\`raw-data\`](../raw-data) folder.
 
 ## Analyses
 
-Analyses in \`analyses\` folder.
+Analyses in [\`analyses\`](../analyses) folder.
 
 ## Wet-lab
 
-Wet-lab documents in \`wet-lab\` folder.
+Wet-lab documents in [\`wet-lab\`](../wet-lab) folder.
 
 ## Results
 
-Results in \`results\` folder.
+Results in [\`results\`](../results) folder.
 
 ---
 
@@ -86,12 +88,6 @@ raw-data/*
 !raw-data/README.md
 EOF
   cat << EOF >> doc/README.md
-## Version Control
-
-To track changes (after creating and editing files)
-
-    git add --all
-    git commit -m "first commit"
 
 EOF
 fi
@@ -108,7 +104,7 @@ if true ; then
 
 ## Description
 
-Text here.
+Add text here.
 
 EOF
   done
@@ -125,7 +121,7 @@ if true ; then
 
 ## Description
 
-Text here.
+Add text here.
 
 ## TODO
 
