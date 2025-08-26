@@ -6,49 +6,51 @@
 
 ## Description
 
-Text here.
+Add text here.
 
-More documentation in the `doc` folder.
+## Documentation
+
+Documentation in the `doc` folder.
 
 ## Notebook
 
-Project [Notebook](../Notebook.md)
+Project [`Notebook.md`](../Notebook.md)
 
 ## Checklist
 
-Project [Checklist](Checklist.md)
+Project [`Checklist.md`](Checklist.md)
 
-## Tools
+## Binaries and scripts
 
-* bin/ask\_ena\_for\_taxon.py
-* bin/ask\_ena\_for\_taxid.py
-* bin/check\_ena\_table\_for\_taxid.py
-* bin/check\_ena\_table\_date\_format.py
-* bin/fill\_ngi\_submit\_sheet.py
+* `bin/ask_ena_for_taxon.py`
+* `bin/ask_ena_for_taxid.py`
+* `bin/check_ena_table_date_format.py`
+* `bin/check_ena_table_for_taxid.py`
+* `bin/fill_ngi_submit_sheet.py`
+
+To add project bin folder to PATH:
+
+    export PATH="/home/nylander/tmp/apa-proj/bin:$PATH"
 
 ## Metadata
 
-Metadata in the \`metadata\` folder.
+Metadata in the [`metadata`](../metadata) folder.
 
 ## Data
 
-Data in the `data` folder, raw data in the `raw-data` folder.
+Data in the [`data`](../data) folder, raw data in the [`raw-data`](../raw-data) folder.
 
 ## Analyses
 
-Analyses in \`analyses\` folder.
+Analyses in [`analyses`](../analyses) folder.
 
 ## Wet-lab
 
-Wet-lab documents in \`wet-lab\` folder.
-
-Text here.
-
----
+Wet-lab documents in [`wet-lab`](../wet-lab) folder.
 
 ## Results
 
-Results in \`results\` folder.
+Results in [`results`](../results) folder.
 
 ---
 
