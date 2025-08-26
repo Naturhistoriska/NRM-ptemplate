@@ -11,7 +11,7 @@ echo "* Project name:" "$PROJNAME"
 
 ## Copy bins to bin
 
-find -L src -type f -executable ! -iname "init.sh" -exec cp -s {} bin/. \;
+find src -type f -executable ! -iname "init.sh" -exec cp {} bin/. \;
 
 ## Create doc/README.md
 if true ; then
