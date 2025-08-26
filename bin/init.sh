@@ -125,7 +125,11 @@ Add text here.
 
 ## TODO
 
+- [ ] Set up remote github repo
 - [ ] Secure metadata from user
+- [ ] Lab work
+- [ ] Create sequencing order for NGI
+- [ ] Download data
 - [ ] Data backup
 - [ ] Clone repo on compute resource
 - [ ] ...
