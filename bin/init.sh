@@ -9,6 +9,10 @@ PROJNAME=$(basename "$PROJPATH")
 
 echo "* Project name:" "$PROJNAME"
 
+## Copy bins to bin
+
+find -L src -type f -executable ! -iname "init.sh" -exec cp -s {} bin/. \;
+
 ## Create doc/README.md
 if true ; then
   cat << EOF > doc/README.md
@@ -34,8 +38,12 @@ Project [Checklist](CHECKLIST.md)
 
 ## Tools
 
-$(find bin -type f -executable ! -iname "init.sh" -printf "* %p\n")
-$(find src -type f -executable  -printf "* %p\n")
+$(find -L bin -type f -executable ! -iname "init.sh" -printf "* %p\n")
+
+
+## Metadata
+
+Metadata in the \`metadata\` folder.
 
 ## Data
 
@@ -85,6 +93,10 @@ To track changes (after creating and editing files)
 
     git add --all
     git commit -m "first commit"
+
+To add project bin folder to PATH:
+
+   export PATH="${PROJPATH}"/bin:\$PATH"
 
 EOF
 fi
