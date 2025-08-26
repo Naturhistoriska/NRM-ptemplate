@@ -28,9 +28,14 @@ More documentation in the \`doc\` folder.
 
 Project [Notebook](../Notebook.md)
 
+## Checklist
+
+Project [Checklist](CHECKLIST.md)
+
 ## Tools
 
 $(find bin -type f -executable ! -iname "init.sh" -printf "* %p\n")
+$(find src -type f -executable  -printf "* %p\n")
 
 ## Data
 
@@ -40,6 +45,9 @@ Data in the \`data\` folder, raw data in the \`raw-data\` folder.
 
 Analyses in \`analyses\` folder.
 
+## Wet-lab
+
+Wet-lab documents in \`wet-lab\` folder.
 
 Text here.
 
@@ -63,8 +71,9 @@ if command -v git >/dev/null 2>&1; then
   echo -n "* "
   git init
   cat << EOF > .gitignore
+*.swp
 private/*
-old/
+old/*
 tmp/
 raw-data/*
 !raw-data/README.md
