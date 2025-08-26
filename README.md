@@ -12,7 +12,7 @@ This repository provides a file hierachy for sequencing projects at NRM.
 By cloning this repository (see [Setup](#setup)), a folder structure is set up,
 and a subset of these files are set under version control.
 
-Furthermore, if necessary steps are checked (see [CHECKLIST](doc/CHECKLIST.md)), the
+Furthermore, if necessary steps are checked (see [Checklist](doc/Checklist.md)), the
 file structure and content is suitable for raw data submission to the [European
 Nucleotide Archive](https://www.ebi.ac.uk/ena/browser/home).
 
@@ -20,8 +20,8 @@ Nucleotide Archive](https://www.ebi.ac.uk/ena/browser/home).
 
 - [ ] Clone and initialize this repository (see [Setup, Local project folder](#local-project-folder))
 - [ ] Create a private repo at <https://github.com/Naturhistoriska> (see [Remote project folder](#remote-project-folder)).
-- [ ] Gather necessary metadata from client (see [CHECKLIST](CHECKLIST.md)).
-- [ ] Continue to follow the [CHECKLIST](doc/CHECKLIST.md) (where applicable).
+- [ ] Gather necessary metadata from client (see [Checklist](Checklist.md)).
+- [ ] Continue to follow the [Checklist](doc/Checklist.md) (where applicable).
 
 ## Setup
 

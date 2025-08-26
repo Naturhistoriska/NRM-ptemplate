@@ -30,11 +30,11 @@ More documentation in the \`doc\` folder.
 
 ## Notebook
 
-Project [Notebook](../Notebook.md)
+Project [Notebook.md](../Notebook.md)
 
 ## Checklist
 
-Project [Checklist](CHECKLIST.md)
+Project [Checklist.md](Checklist.md)
 
 ## Tools
 
@@ -42,7 +42,7 @@ $(find -L bin -type f -executable ! -iname "init.sh" -printf "* \`%p\`\n")
 
 To add project bin folder to PATH:
 
-   export PATH="${PROJPATH}"/bin:\$PATH"
+    export PATH="${PROJPATH}/bin:\$PATH"
 
 ## Metadata
 

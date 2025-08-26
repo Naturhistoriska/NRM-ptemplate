@@ -16,7 +16,7 @@ Project [Notebook](../Notebook.md)
 
 ## Checklist
 
-Project [Checklist](CHECKLIST.md)
+Project [Checklist](Checklist.md)
 
 ## Tools
 
