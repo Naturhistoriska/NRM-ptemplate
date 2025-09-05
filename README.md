@@ -12,15 +12,19 @@ This repository provides a file hierachy for sequencing projects at NRM.
 By cloning this repository (see [Setup](#setup)), a folder structure is set up,
 and a subset of these files are set under version control.
 
-Furthermore, if necessary steps are checked (see [Checklist](doc/Checklist.md)), the
-file structure and content is suitable for raw data submission to the [European
-Nucleotide Archive](https://www.ebi.ac.uk/ena/browser/home).
+Furthermore, if necessary steps are checked (see
+[Checklist](doc/Checklist.md)), the file structure and content is suitable for
+raw data submission to the [European Nucleotide
+Archive](https://www.ebi.ac.uk/ena/browser/home).
 
 ## Steps
 
-- [ ] Clone and initialize this repository (see [Setup, Local project folder](#local-project-folder))
-- [ ] Create a private repo at <https://github.com/Naturhistoriska> (see [Remote project folder](#remote-project-folder)).
-- [ ] Gather necessary metadata from client (see [Checklist](doc/Checklist.md)).
+- [ ] Clone and initialize this repository (see [Setup, Local project
+  folder](#local-project-folder))
+- [ ] Create a private repo at <https://github.com/Naturhistoriska> (see
+  [Remote project folder](#remote-project-folder)).
+- [ ] Gather necessary metadata from client (see
+  [Checklist](doc/Checklist.md)).
 - [ ] Continue to follow the [Checklist](doc/Checklist.md) (where applicable).
 
 ## Setup
@@ -28,12 +32,12 @@ Nucleotide Archive](https://www.ebi.ac.uk/ena/browser/home).
 Here we will clone the NRM-ptemplate repo under a new name sutiable for our
 project (It is recommended to use an informative name for the project, e.g.,
 `john-doe-fishes`). Thereafter we will manually create a repository with the
-same name on github.com/Naturhistoriska.  After that, we will "push" all our
-local files to github.
+same name on [github.com/Naturhistoriska](https://github.com/Naturhistoriska).
+After that, we will "push" all our local files to github.
 
 ### Local project folder
 
-To initialize a new local project folder, run these three commands below.  It
+To initialize a new local project folder, run these three commands below. It
 is recommended to use an informative name for the project, such as, e.g.,
 `john-doe-fishes`.
 
@@ -44,26 +48,26 @@ is recommended to use an informative name for the project, such as, e.g.,
 This will create the following folder structure:
 
     john-doe-fishes
-    ├── analyses
-    ├── bin
-    ├── data
-    ├── doc
-    ├── metadata
-    ├── old
-    ├── private
-    ├── raw-data
-    ├── results
-    ├── src
-    ├── tmp
-    ├── wet-lab
-    ├── .git
-    ├── Notebook.md
-    ├── README.md
-    ├── .editorconfig
-    └── .gitignore
+        ├── analyses/
+        ├── bin/
+        ├── data/
+        ├── doc/
+        ├── metadata/
+        ├── old/
+        ├── private/
+        ├── rawdata/
+        ├── results/
+        ├── src/
+        ├── tmp/
+        ├── wetlab/
+        ├── .git/
+        ├── Notebook.md
+        ├── README.md
+        ├── .editorconfig
+        └── .gitignore
 
 Files are set under version control (git), except in folders `private/`,
-`raw-data/`, `old/` and `tmp/`. This can be changed by editing the `.gitignore`
+`rawdata/`, `old/` and `tmp/`. This can be changed by editing the `.gitignore`
 file (see <https://git-scm.com/docs/gitignore>).
 
 Furthermore, project-specific file-formatting settings for editors can be set

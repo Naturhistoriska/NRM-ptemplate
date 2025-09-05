@@ -52,7 +52,7 @@ Metadata in the [\`metadata\`](../metadata) folder.
 
 ## Data
 
-Data in the [\`data\`](../data) folder, raw data in the [\`raw-data\`](../raw-data) folder.
+Data in the [\`data\`](../data) folder, raw data in the [\`rawdata\`](../rawdata) folder.
 
 ## Analyses
 
@@ -60,7 +60,7 @@ Analyses in [\`analyses\`](../analyses) folder.
 
 ## Wet-lab
 
-Wet-lab documents in [\`wet-lab\`](../wet-lab) folder.
+Wet-lab documents in [\`wetlab\`](../wetlab) folder.
 
 ## Results
 
@@ -84,8 +84,8 @@ if command -v git >/dev/null 2>&1; then
 private/*
 old/*
 tmp/
-raw-data/*
-!raw-data/README.md
+rawdata/*
+!rawdata/README.md
 EOF
   cat << EOF >> doc/README.md
 
@@ -94,7 +94,7 @@ fi
 
 ## Create other README.md files
 if true ; then
-  for d in bin data raw-data analyses metadata private results src wet-lab wet-lab/img ; do
+  for d in bin data rawdata analyses metadata private results src wetlab wetlab/img ; do
   cat << EOF > "$d"/README.md
 # $PROJNAME -- $d
 
