@@ -20,7 +20,7 @@ Nucleotide Archive](https://www.ebi.ac.uk/ena/browser/home).
 
 - [ ] Clone and initialize this repository (see [Setup, Local project folder](#local-project-folder))
 - [ ] Create a private repo at <https://github.com/Naturhistoriska> (see [Remote project folder](#remote-project-folder)).
-- [ ] Gather necessary metadata from client (see [Checklist](Checklist.md)).
+- [ ] Gather necessary metadata from client (see [Checklist](doc/Checklist.md)).
 - [ ] Continue to follow the [Checklist](doc/Checklist.md) (where applicable).
 
 ## Setup
