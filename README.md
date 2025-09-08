@@ -78,9 +78,9 @@ using the `.editorconfig` file (see <https://editorconfig.org/>).
 1. Open a web browser
 2. Create a new project
 (<https://github.com/organizations/Naturhistoriska/repositories/new>)
-    - Add a name, preferably with PI name and project name. E.g.
+    - Add a name, preferably with **PI name** and **project name**. E.g.
       `john-doe-fishes`
-    - Add a short description
+    - Add a short **Description**
     - Make sure the **Private** checkbox is ticked
     - Click on **Create repository**
 3. Add the DNA-lab Team to the repository:
