@@ -155,7 +155,7 @@ else
   ls -I init.sh -F "$PROJPATH"
 fi
 
-echo "* Start with file doc/README.md"
+echo "* Provided that you read the repo root README.md, start with file doc/README.md"
 
 ## Move init.sh to old/
 mv "$0" "$PROJPATH"/old/
