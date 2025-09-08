@@ -123,7 +123,9 @@ if true ; then
 
 **Sign:** $USER
 
-**PI:** PI Name<PI.Name@mail.com> (add contact information to PI here)
+**PI:** PI Name <PI.Name@mail.com> (add contact information to PI here)
+
+**Data backup folder:** `nrmdna01.nrm.se:/projects/XXX-projects/PI/data-folder` (add full path to data backup folder here)
 
 **Data release date:** YYYY-MM-DD (add data release date here)
 
