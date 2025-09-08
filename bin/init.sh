@@ -40,7 +40,7 @@ Project [\`Checklist.md\`](Checklist.md)
 
 ## Binaries and scripts
 
-$(find -L bin -type f -executable ! -iname "init.sh" -printf "* ../\`%p\`\n")
+$(find -L bin -type f -executable ! -iname "init.sh" -printf "* <\`../%p\`>\n")
 
 To add project bin folder to PATH:
 
