@@ -22,6 +22,10 @@ if true ; then
 
 **Sign:** $USER
 
+**PI**: PI Name<PI.Name@nrm.se> (add PI contact information here)
+
+**Data release date**: YYYY-MM-DD (add data release date here. See [metadata/README.md](../metadata/README.md))
+
 ## Description
 
 Add text here.
