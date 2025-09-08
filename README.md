@@ -1,9 +1,13 @@
 # NRM-ptemplate - A project template for sequencing projects at NRM
 
+---
+
 **TL;DR**
 
     $ git clone https://github.com/Naturhistoriska/NRM-ptemplate.git newproj
     $ cd newproj && sh bin/init.sh
+
+---
 
 ## Description
 
