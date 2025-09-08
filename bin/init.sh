@@ -40,7 +40,7 @@ Project [\`Checklist.md\`](Checklist.md)
 
 ## Binaries and scripts
 
-$(find -L bin -type f -executable ! -iname "init.sh" -printf "* \`%p\`\n")
+$(find -L bin -type f -executable ! -iname "init.sh" -printf "* ../\`%p\`\n")
 
 To add project bin folder to PATH:
 
@@ -118,6 +118,10 @@ if true ; then
 **Version:** $TIMESTAMP
 
 **Sign:** $USER
+
+**PI:** PI Name<PI.Name@mail.com> (add contact information to PI here)
+
+**Data release date:** YYYY-MM-DD (add data release date here)
 
 ## Description
 
