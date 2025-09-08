@@ -155,7 +155,8 @@ else
   ls -I init.sh -F "$PROJPATH"
 fi
 
-echo "* Provided that you read the repo root README.md, start with file doc/README.md"
+echo "* Provided that you read the repo root README.md and created the github.com/Naturhistoriska/$PROJNAME,"
+echo "   start with file doc/README.md"
 
 ## Move init.sh to old/
 mv "$0" "$PROJPATH"/old/
