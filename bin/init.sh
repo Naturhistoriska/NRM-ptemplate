@@ -96,6 +96,25 @@ EOF
 EOF
 fi
 
+## Create private repo on github.com/Naturhistoriska using gh
+url="git@github.com:Naturhistoriska/$PROJNAME"
+function git-remote-url-reachable() {
+  git ls-remote "$1" CHECK_GIT_REMOTE_URL_REACHABILITY >/dev/null 2>&1
+}
+if command -v gh >/dev/null 2>&1; then
+  cd "$PROJPATH" || exit
+  if git-remote-url-reachable "$url"; then
+    echo "* Remote Naturhistoriska/$PROJNAME already exists"
+  else
+    gh repo create "Naturhistoriska/$PROJNAME" \
+      --description "$PROJNAME" \
+      --disable-wiki \
+      --private \
+      --source=. \
+      --team "NRM-DNA-lab"
+   fi
+fi
+
 ## Create other README.md files
 if true ; then
   for d in bin data rawdata analyses metadata private results src wetlab wetlab/img ; do
@@ -125,7 +144,7 @@ if true ; then
 
 **PI:** PI Name <PI.Name@mail.com> (add contact information to PI here)
 
-**Data backup folder:** `nrmdna01.nrm.se:/projects/XXX-projects/PI/data-folder` (add full path to data backup folder here)
+**Data backup folder:** \`nrmdna01.nrm.se:/projects/XXX-projects/PI/data-folder\` (add full path to data backup folder here)
 
 **Data release date:** YYYY-MM-DD (add data release date here)
 

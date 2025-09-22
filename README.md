@@ -17,12 +17,20 @@ Furthermore, if necessary steps are checked (see
 raw data submission to the [European Nucleotide
 Archive](https://www.ebi.ac.uk/ena/browser/home).
 
+## Local requirements
+
+To run the setup scripts, a local installation of [git](https://git-scm.com/)
+and [gh](https://cli.github.com/) is needed. On Ubuntu Linux, one can do: `sudo
+apt install git gh`.
+
 ## Steps
 
 - [ ] Clone and initialize this repository (see [Setup, Local project
   folder](#local-project-folder))
-- [ ] Create a private repo at <https://github.com/Naturhistoriska> (see
-  [Remote project folder](#remote-project-folder)).
+- [ ] Make sure a private repo was created at
+  <https://github.com/Naturhistoriska> (should have been automatically done in
+  the stepabove. Else see [Remote project
+  folder](#manual-creation-of-a-remote-project-folder)).
 - [ ] Gather necessary metadata from client (see
   [Checklist](doc/Checklist.md)).
 - [ ] Continue to follow the [Checklist](doc/Checklist.md) (where applicable).
@@ -73,7 +81,16 @@ file (see <https://git-scm.com/docs/gitignore>).
 Furthermore, project-specific file-formatting settings for editors can be set
 using the `.editorconfig` file (see <https://editorconfig.org/>).
 
-### Remote project folder
+## Notes
+
+File structure inspired by [A Quick Guide to Organizing Computational Biology
+Projects](http://dx.doi.org/10.1371/journal.pcbi.1000424)
+
+
+### Manual creation of a remote project folder
+
+If the init script (bin/init.sh) doesn't manage to create a repository on
+github, the following steps can be taken:
 
 1. Open a web browser
 2. Create a new project
@@ -96,9 +113,4 @@ using the `.editorconfig` file (see <https://editorconfig.org/>).
         $ git remote add origin git@github.com:Naturhistoriska/john-d-fishes.git
         $ git branch -M main
         $ git push -u origin main
-
-## Notes
-
-Inspired by [A Quick Guide to Organizing Computational Biology
-Projects](http://dx.doi.org/10.1371/journal.pcbi.1000424)
 
