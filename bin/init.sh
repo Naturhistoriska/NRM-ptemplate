@@ -83,6 +83,7 @@ if command -v git >/dev/null 2>&1; then
   fi
   echo -n "* "
   git init
+  git config --local push.autoSetupRemote true
   cat << EOF > .gitignore
 *.swp
 private/*
