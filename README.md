@@ -90,7 +90,8 @@ using the `.editorconfig` file (see <https://editorconfig.org/>).
     - Search for `Naturhistoriska/nrm-dna-lab` and continue
     - Choose a role: **Maintain** (or consider *Write* or *Admin*)
     - Click on **Add Naturhistoriska/nrm-dna-lab to this repository**
-4. Return to your local repository and "push" your files to github
+4. Return to your local repository and "push" your files to github.
+   **Important**: if your repository on GitHub is private, don't forget the `remote add origin` command below!  
 
         $ git remote add origin git@github.com:Naturhistoriska/john-d-fishes.git
         $ git branch -M main
