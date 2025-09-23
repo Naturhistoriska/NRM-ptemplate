@@ -155,7 +155,7 @@ Add text here.
 
 ## TODO
 
-- [ ] Set up remote github repo
+- [ ] Check remote github repo
 - [ ] Secure metadata from user
 - [ ] Lab work
 - [ ] Create sequencing order for NGI
