@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 TIMESTAMP=$(date '+%Y-%m-%d')
 
@@ -99,9 +99,11 @@ fi
 
 ## Create private repo on github.com/Naturhistoriska using gh
 url="git@github.com:Naturhistoriska/$PROJNAME"
-function git-remote-url-reachable() {
+
+git-remote-url-reachable() {
   git ls-remote "$1" CHECK_GIT_REMOTE_URL_REACHABILITY >/dev/null 2>&1
 }
+
 if command -v gh >/dev/null 2>&1; then
   cd "$PROJPATH" || exit
   if git-remote-url-reachable "$url"; then
