@@ -11,7 +11,7 @@ echo "* Project name:" "$PROJNAME"
 
 ## Copy bins to bin
 
-find src -type f -executable ! -iname "init.sh" -exec cp {} bin/. \;
+find src -type f -perm +111 ! -iname "init.sh" -exec cp {} bin/. \;
 
 ## Create doc/README.md
 if true ; then
@@ -44,7 +44,7 @@ Project [\`Checklist.md\`](Checklist.md)
 
 ## Binaries and scripts
 
-$(find -L bin -type f -executable ! -iname "init.sh" -printf "* [\`%p\`](../%p)\n")
+$(find -L bin -type f -perm +111 ! -iname "init.sh" -exec sh -c 'printf "* [\`%s\`](../%s)\n" "$1" "$1"' _ {} \;)
 
 To add project bin folder to PATH:
 
@@ -100,13 +100,13 @@ fi
 ## Create private repo on github.com/Naturhistoriska using gh
 url="git@github.com:Naturhistoriska/$PROJNAME"
 
-git-remote-url-reachable() {
+git_remote_url_reachable() {
   git ls-remote "$1" CHECK_GIT_REMOTE_URL_REACHABILITY >/dev/null 2>&1
 }
 
 if command -v gh >/dev/null 2>&1; then
   cd "$PROJPATH" || exit
-  if git-remote-url-reachable "$url"; then
+  if git_remote_url_reachable "$url"; then
     echo "* Remote Naturhistoriska/$PROJNAME already exists"
   else
     gh repo create "Naturhistoriska/$PROJNAME" \
@@ -176,7 +176,7 @@ echo "* Path, files and folders:"
 if command -v tree >/dev/null 2>&1; then
   tree -I init.sh "$PROJPATH"
 else
-  ls -I init.sh -F "$PROJPATH"
+  ls -F "$PROJPATH" | grep -v "init.sh"
 fi
 
 echo "* Provided that you read the repo root README.md and created the github.com/Naturhistoriska/$PROJNAME,"
