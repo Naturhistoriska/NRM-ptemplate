@@ -44,7 +44,7 @@ Project [\`Checklist.md\`](Checklist.md)
 
 ## Binaries and scripts
 
-$(find -L bin -type f -perm +111 ! -iname "init.sh" -exec sh -c 'printf "* [\`%s\`](../%s)\n" "$1" "$1"' _ {} \;)
+$(find -L bin -type f -perm -u=x ! -iname "init.sh" -exec sh -c 'printf "* [\`%s\`](../%s)\n" "$1" "$1"' _ {} \;)
 
 To add project bin folder to PATH:
 
