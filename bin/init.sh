@@ -11,7 +11,7 @@ echo "* Project name:" "$PROJNAME"
 
 ## Copy bins to bin
 
-find src -type f -perm +111 ! -iname "init.sh" -exec cp {} bin/. \;
+find src -type f -perm -u=x ! -iname "init.sh" -exec cp {} bin/. \;
 
 ## Create doc/README.md
 if true ; then
@@ -93,7 +93,6 @@ rawdata/*
 !rawdata/README.md
 EOF
   cat << EOF >> doc/README.md
-
 EOF
 fi
 
